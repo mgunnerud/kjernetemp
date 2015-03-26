@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+#viewport
+{
+	position: absolute;
+	top: 0;
+	bottom: 26px;
+	left: 0;
+	right: 0;
+}
+
+#temperatureTree
+{
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+#scrollpane
+{
+	position: relative;
+	right: 0px;
+	height: 100%;
+	/*transition: 0.2s ease-in-out;  change card speed */
+	
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	
+	-webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+#header
+{
+	width: 100%;
+	height: 34px;
+	padding: 5px;
+	background-color: #DDD;
+}
+
+#tabbuttons
+{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+#scrollwrapper
+{
+	overflow: scroll;
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.tabbutton
+{
+	display: inline-block;
+	padding: 4px;
+	width: 50%;
+	text-align: center;
+	border: 1px solid;
+}
+
+.activeTabButton
+{
+	background-color: #DDD;
+}
+
+#contact
+{
+	display: none;
+}
+
+#headerName
+{
+	display: inline-block;
+	padding-top: 4px;
+}
+
+#backButton
+{
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 3px;
+	margin-right: 5px;
+}
+
+.card
+{
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.listObject
+{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid;
+	cursor: pointer;
+}
+
+.listObject:hover
+{
+	background-color: #DDD;
+}
+
+.listObjectName
+{
+	font-weight: bold;
+}
