@@ -1,6 +1,6 @@
 var screenWidth;
 var currentScreen = 0;
-var scrollSpeed = 300;
+var scrollSpeed = 200;
 var headerHistory = ["Velg kjøtt"];
 
 var data = [
@@ -166,7 +166,7 @@ Kjernetemp.prototype.fillView = function(view, viewData)
 			scrollPane.appendChild($newCard);
 			scrollPane.style.width = scrollPane.clientWidth + screenWidth + "px";
 			
-			setTimeout(function() { me.scrollNext(); }, 100); // TODO: better fix for this!!!
+			setTimeout(function() { me.scrollNext(); }, 10); // TODO: better fix for this!!!
 		};
 		
 		listObject.setAttribute("treePath", i);
