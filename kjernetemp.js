@@ -63,7 +63,8 @@ var data = [
 		"name": "Test 8"
 	},		
 	{
-		"name": "Test 9"
+		"name": "Test 9",
+		"children": [{ "name": "test 9-1"}, { "name": "test 9-2"}]
 	},
 	{
 		"name": "Test 10"
