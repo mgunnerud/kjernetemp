@@ -14,7 +14,7 @@ var data = [
 		"children": [
 			{ 
 				"name": "Kotelett", 
-				"children": []
+				"children": [{ "name": "rare", "description": "x grader" }]
 			}, 
 			{ 
 				"name": "Svinesteik", 
@@ -36,53 +36,67 @@ var data = [
 	},
 	{
 		"name": "Lam",
-		"children": [{ "name": "Lammesteik", "children": [] }, { "name": "Lammekotelett", "children": [] }]
+		"children": [{ "name": "Lammesteik", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Lammekotelett", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 1"
+		"name": "Test 1",
+		"children": [{ "name": "Test 1-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 1-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 2"
+		"name": "Test 2",
+		"children": [{ "name": "Test 2-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 2-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 3"
+		"name": "Test 3",
+		"children": [{ "name": "Test 3-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 3-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 4"
+		"name": "Test 4",
+		"children": [{ "name": "Test 4-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 4-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 5"
+		"name": "Test 5",
+		"children": [{ "name": "Test 5-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 5-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 6"
+		"name": "Test 6",
+		"children": [{ "name": "Test 6-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 6-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 7"
+		"name": "Test 7",
+		"children": [{ "name": "Test 7-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 7-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 8"
+		"name": "Test 8",
+		"children": [{ "name": "Test 8-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 8-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},		
 	{
 		"name": "Test 9",
-		"children": [{ "name": "test 9-1"}, { "name": "test 9-2"}]
+		"children": [{ "name": "Test 9-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 9-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 10"
+		"name": "Test 10",
+		"children": [{ "name": "Test 10-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 10-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 11"
+		"name": "Test 11",
+		"children": [{ "name": "Test 11-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 11-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 12"
+		"name": "Test 12",
+		"children": [{ "name": "Test 12-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 12-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 13"
+		"name": "Test 13",
+		"children": [{ "name": "Test 13-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 13-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test 14"
+		"name": "Test 14",
+		"children": [{ "name": "Test 14-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test 14-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	},
 	{
-		"name": "Test nederste trenode"
+		"name": "Test nederste trenode",
+		"children": [{ "name": "Test nederst-1", "children": [{ "name": "rare", "description": "x grader" }] }, { "name": "Test nederst-2", "children": [{ "name": "rare", "description": "x grader" }] }]
 	}
 ];
 
