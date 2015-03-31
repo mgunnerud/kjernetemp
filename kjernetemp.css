@@ -57,7 +57,8 @@ body
 
 #scrollwrapper
 {
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	position: absolute;
 	top: 35px;
 	bottom: 0;
@@ -112,6 +113,7 @@ body
 	margin: 5px;
 	border: 1px solid;
 	cursor: pointer;
+	position: relative;
 }
 
 .listObject:hover
@@ -121,5 +123,13 @@ body
 
 .listObjectName
 {
+	font-weight: bold;
+}
+
+.listObjectArrow
+{
+	position: absolute;
+	right: 5px;
+	top: 5px;
 	font-weight: bold;
 }

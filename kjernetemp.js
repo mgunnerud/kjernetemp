@@ -1,3 +1,8 @@
+/*
+* TODO:
+* - handle screen rotation
+* - add styling
+*/
 var screenWidth;
 var currentScreen = 0;
 var scrollSpeed = 200;
@@ -94,11 +99,13 @@ function Kjernetemp()
 	
 	var $backButton = document.getElementById("backButton");
 	$backButton.style.display = "none";
-	var backButtonClickFn = function ()
+	var backButtonClickFn = function (event)
 	{
+		event.preventDefault();
 		me.scrollPrev();
 	};
 	$backButton.addEventListener("click", backButtonClickFn, false);
+	$backButton.addEventListener("touchend", backButtonClickFn, false);
 	me.setHeaderName();
 	
 	scrollPane.style.width = screenWidth;
@@ -114,23 +121,27 @@ Kjernetemp.prototype.setupTabButtons = function()
 	
 	$temperatureButton.classList.add("activeTabButton");
 	
-	var onTemperatureButtonClick = function()
+	var onTemperatureButtonClick = function(event)
 	{
+		event.preventDefault();
 		document.getElementById("temperatureTree").style.display = "block";
 		document.getElementById("contact").style.display = "none";
 		$temperatureButton.classList.add("activeTabButton");
 		$contactButton.classList.remove("activeTabButton");
 	};
 	$temperatureButton.addEventListener("click", onTemperatureButtonClick, false);
+	$temperatureButton.addEventListener("touchend", onTemperatureButtonClick, false);
 	
-	var onContactButtonClick = function()
+	var onContactButtonClick = function(event)
 	{
+		event.preventDefault();
 		document.getElementById("temperatureTree").style.display = "none";
 		document.getElementById("contact").style.display = "block";
 		$temperatureButton.classList.remove("activeTabButton");
 		$contactButton.classList.add("activeTabButton");
 	};
 	$contactButton.addEventListener("click", onContactButtonClick, false);
+	$contactButton.addEventListener("touchend", onContactButtonClick, false);
 };
 
 Kjernetemp.prototype.fillView = function(view, viewData)
@@ -144,6 +155,7 @@ Kjernetemp.prototype.fillView = function(view, viewData)
 		listObjectName.classList.add("listObjectName");
 		listObjectName.innerHTML = viewData[i].name;
 		listObject.appendChild(listObjectName);
+		
 		if(viewData[i].description)
 		{
 			var listObjectDescription = document.createElement("div");
@@ -153,6 +165,7 @@ Kjernetemp.prototype.fillView = function(view, viewData)
 		
 		listObjectClickFn = function(event)
 		{
+			event.preventDefault();
 			var treePath = event.currentTarget.getAttribute("treePath");
 			var scrollPane = me.getScrollPane();
 			var $newCard = document.createElement("div");
@@ -171,7 +184,14 @@ Kjernetemp.prototype.fillView = function(view, viewData)
 		
 		listObject.setAttribute("treePath", i);
 		if(viewData[i].children)
+		{
 			listObject.addEventListener("click", listObjectClickFn, false);
+			listObject.addEventListener("touchend", listObjectClickFn, false);
+			var listObjectArrow = document.createElement("div");
+			listObjectArrow.innerHTML = ">";
+			listObjectArrow.classList.add("listObjectArrow");
+			listObject.appendChild(listObjectArrow);
+		}
 		view.appendChild(listObject);
 	} 
 };
