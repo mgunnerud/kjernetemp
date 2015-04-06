@@ -120,7 +120,7 @@ function Kjernetemp()
 		me.scrollPrev();
 	};
 	$backButton.addEventListener("click", backButtonClickFn, false);
-	$backButton.addEventListener("touchend", backButtonClickFn, false);
+	//$backButton.addEventListener("touchend", backButtonClickFn, false);
 	me.setHeaderName();
 	
 	scrollPane.style.width = screenWidth;
@@ -145,7 +145,7 @@ Kjernetemp.prototype.setupTabButtons = function()
 		$contactButton.classList.remove("activeTabButton");
 	};
 	$temperatureButton.addEventListener("click", onTemperatureButtonClick, false);
-	$temperatureButton.addEventListener("touchend", onTemperatureButtonClick, false);
+	//$temperatureButton.addEventListener("touchend", onTemperatureButtonClick, false);
 	
 	var onContactButtonClick = function(event)
 	{
@@ -156,7 +156,7 @@ Kjernetemp.prototype.setupTabButtons = function()
 		$contactButton.classList.add("activeTabButton");
 	};
 	$contactButton.addEventListener("click", onContactButtonClick, false);
-	$contactButton.addEventListener("touchend", onContactButtonClick, false);
+	//$contactButton.addEventListener("touchend", onContactButtonClick, false);
 };
 
 Kjernetemp.prototype.fillView = function(view, viewData)
@@ -201,7 +201,7 @@ Kjernetemp.prototype.fillView = function(view, viewData)
 		if(viewData[i].children)
 		{
 			listObject.addEventListener("click", listObjectClickFn, false);
-			listObject.addEventListener("touchend", listObjectClickFn, false);
+			//listObject.addEventListener("touchend", listObjectClickFn, false);
 			var listObjectArrow = document.createElement("div");
 			listObjectArrow.innerHTML = ">";
 			listObjectArrow.classList.add("listObjectArrow");
@@ -270,4 +270,6 @@ window.onload = function ()
 {
 	screenWidth = document.getElementById("temperatureTree").clientWidth;
 	kjernetempGlobal = new Kjernetemp();
+   	var attachFastClick = Origami.fastclick;
+	attachFastClick(document.body);
 };

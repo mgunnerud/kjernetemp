@@ -98,6 +98,11 @@ body
 	margin-right: 5px;
 }
 
+#backButton:active
+{
+	background-color: #AAA;
+}
+
 .card
 {
 	overflow-y: scroll;
@@ -116,7 +121,7 @@ body
 	position: relative;
 }
 
-.listObject:hover
+.listObject:active
 {
 	background-color: #DDD;
 }
