@@ -273,4 +273,5 @@ window.onload = function ()
 	kjernetempGlobal = new Kjernetemp();
    	var attachFastClick = Origami.fastclick;
 	attachFastClick(document.body);
+	nonbounce("scrollpane");
 };
