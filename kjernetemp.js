@@ -273,8 +273,4 @@ window.onload = function ()
 	kjernetempGlobal = new Kjernetemp();
    	var attachFastClick = Origami.fastclick;
 	attachFastClick(document.body);
-	document.addEventListener("touchmove", function(e) 
-	{ 
-		e.preventDefault(); 
-	});
 };
