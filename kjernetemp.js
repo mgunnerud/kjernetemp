@@ -108,6 +108,7 @@ function Kjernetemp()
 	
 	
 	var $firstView = document.createElement("div");
+	$firstView.setAttribute("id", "activeCard");
 	$firstView.classList.add("card");
 	$firstView.style.width = screenWidth;
 	me.fillView($firstView, data);
@@ -273,5 +274,5 @@ window.onload = function ()
 	kjernetempGlobal = new Kjernetemp();
    	var attachFastClick = Origami.fastclick;
 	attachFastClick(document.body);
-	nonbounce("scrollpane");
+	nonbounce("activeCard");
 };
