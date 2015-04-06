@@ -20,9 +20,10 @@ body
 
 #temperatureTree
 {
-	/*height: 100%;
+	/*
 	width: 100%;*/
 	border: 1px solid black;
+	height: 100%;
 	/*overflow: hidden;*/
 }
 
@@ -45,6 +46,7 @@ body
 	height: 34px;
 	padding: 5px;
 	background-color: #DDD;
+	border: 1px solid;
 }
 
 #tabbuttons

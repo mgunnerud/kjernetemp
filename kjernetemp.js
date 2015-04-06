@@ -266,10 +266,15 @@ document.addEventListener("keydown", function(e)
 		kjernetempGlobal.scrollPrev();
 }, false);
 */
+
 window.onload = function () 
 {
 	screenWidth = document.getElementById("temperatureTree").clientWidth;
 	kjernetempGlobal = new Kjernetemp();
    	var attachFastClick = Origami.fastclick;
 	attachFastClick(document.body);
+	document.addEventListener("touchmove", function(e) 
+	{ 
+		e.preventDefault(); 
+	});
 };
