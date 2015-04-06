@@ -103,6 +103,7 @@ body
 	height: 100%;
 	float: left;
 	position: relative;
+	-webkit-overflow-scrolling:touch;
 }
 
 .listObject
